@@ -1,8 +1,7 @@
 <?php
-class clients extends Model{
-  var $table="utilisateur";
-  
-  
+
+class clients extends Model {
+	var $table = 'utilisateur';
 }
 
 ?>

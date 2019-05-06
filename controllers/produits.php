@@ -11,32 +11,35 @@
  *
  * @author delphine_user
  */
-class produits extends Controller{
-    //put your code here
-   function index(){
-	    $pdo=new PDO("mysql:host=localhost;dbname=ebook","root","");
+class produits extends Controller {
+	function index() {
+		$pdo = new PDO("mysql:host=localhost;dbname=vegania","root","root");
 		$pdo->exec('SET NAMES utf8');
 		$prod = Model::load('produit');
 		$resultat = $prod->find($pdo,array(),"*");
-		$variables['prod']=array('mesproduits'=>$resultat);
+		$variables['prod'] = $resultat;
 		$this->set($variables);
 		$this->render('index');
-    }
-	
-	function detail($id){
-		
-		
-		$pdo=new PDO("mysql:host=localhost;dbname=ebook","root","");
+	}
+
+	//put your code here
+	function panier() {
+		$this->render('panier');
+	}
+
+	function detail($id) {
+		$pdo = new PDO("mysql:host=localhost;dbname=vegania","root","root");
 		$pdo->exec('SET NAMES utf8');
 		$prod = Model::load('produit');
 		$resultat = $prod->find($pdo,array('condition'=>'IdProd='.$id),"*");
 		$nom = $prod->find($pdo,array('condition'=>'IdProd='.$id),"IdProd");
-		$variables['prod']=array('mesproduits'=>$resultat);
+		$variables['prod'] = $resultat;
 		$this->set($variables);
 		$this->render('detail');
 	}
-	 function banane(){
-        echo "<br>test sur le controller accueil méthode banane";
-    }
+
+	function banane() {
+		echo "<br>test sur le controller accueil méthode banane";
+	}
 }
 ?>

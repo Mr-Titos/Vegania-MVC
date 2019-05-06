@@ -4,7 +4,7 @@ class Client extends Controller{
 	
 	function index(){
 		
-                 $pdo=new PDO("mysql:host=localhost;dbname=ebook","root","");
+                 $pdo=new PDO("mysql:host=localhost;dbname=ebook","root","root");
                 $pdo->exec('SET NAMES utf8');
 				$pers = Model::load("client");
                 $pers->id=1 ;
