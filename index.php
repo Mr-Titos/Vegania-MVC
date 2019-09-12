@@ -3,10 +3,6 @@
 define('WEBROOT', str_replace('index.php', '', $_SERVER['SCRIPT_NAME']));
 define('ROOT', str_replace('index.php', '', $_SERVER['SCRIPT_FILENAME']));
 
-/* DECOMMENTER LES DEUX LIGNES SUIVANTES POUR AFFICHER LES CHEMINS EN COMMENTAIRE HTML */
-// echo('<!-- WEBROOT: ' . WEBROOT . ' -->');
-// echo('<!-- ROOT: ' . ROOT . ' -->');
-
 require(ROOT . 'core/model.php');
 require(ROOT . 'core/controller.php');
 

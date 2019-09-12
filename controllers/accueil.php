@@ -11,15 +11,19 @@
  *
  * @author delphine_user
  */
-class Accueil extends Controller{
+class Accueil extends Controller {
     //put your code here
-    function index(){
-		$variables['info']=array('titre'=>'Change ton titre','description'=>'bla bla ...');
-		
-		$this->set($variables);
-		$this->render('index');;
+    function index() {
+        $variables['info'] = array(
+            'titre' => "Vegania",
+            'description' => "Bienvenue sur le site web de l'organisation Vegania !"
+        );
+
+        $this->set($variables);
+        $this->render('index');
     }
-	 function banane(){
+
+    function banane() {
         echo "<br>test sur le controller accueil méthode banane";
     }
 }

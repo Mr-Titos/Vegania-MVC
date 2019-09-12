@@ -1,5 +1,4 @@
-<?php
-echo "test sur le fichier accueil";
-var_dump($info);
-?>
 
+<h2><?= $info['titre'] ?></h2>
+
+<p><?= $info['description'] ?></p>

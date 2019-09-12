@@ -8,12 +8,12 @@
 			body {
 				background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("<?= WEBROOT ?>assets/image/background.jpg");
 			}
-		
+
 			header {
 				background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("<?= WEBROOT ?>assets/image/shrek.jpg");
 				background-position: 0px -260px;
 			}
-			
+
 			.page-row {
 				background-color: white;
 			}
@@ -21,7 +21,7 @@
 			.page-module {
 				background-color: rgba(0, 255, 0, 0.05);
 			}
-			
+
 			table, td {
 				border: 1px solid black;
 			}
@@ -47,11 +47,11 @@
 					<span class="navbar-toggler-icon white"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="collnavbar">
-					<ul class="navbar-nav"> 
+					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>accueil/">Accueil</a></li>
 						<li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>produits/">Produits</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Panier</a></li>
+						<li class="nav-item"><a class="nav-link" href="panier/">Panier</a></li>
 					</ul>
 				</div>
 			</nav>
